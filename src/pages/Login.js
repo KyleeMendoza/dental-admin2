@@ -136,16 +136,7 @@ export default function Login() {
               id="password"
               autoComplete="current-password"
             />
-            {/* <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
-              label={
-                <Typography
-                  sx={{ fontSize: 16, fontFamily: "Poppins, sans serif" }}
-                >
-                  Remember Me
-                </Typography>
-              }
-            /> */}
+
             <Button
               type="submit"
               fullWidth
@@ -155,17 +146,17 @@ export default function Login() {
               Sign In
             </Button>
 
-            {/* <Grid container justifyContent="flex-end">
+            <Grid container justifyContent="flex-end">
               <Grid item>
                 <Link
-                  href="/signup"
+                  href="#"
                   variant="body2"
                   sx={{ fontFamily: "Poppins, sans serif" }}
                 >
                   {"Don't have an account? Sign Up"}
                 </Link>
               </Grid>
-            </Grid> */}
+            </Grid>
           </Box>
         </Box>
         <Copyright sx={{ mt: 8, mb: 4, fontFamily: "Poppins, sans serif" }} />

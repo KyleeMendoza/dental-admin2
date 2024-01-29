@@ -207,10 +207,7 @@ export default function NavBar({ setCookie }) {
           }}
         >
           <Toolbar />
-          <Container
-            maxWidth="full"
-            sx={{ height: "100%", border: "2px solid red" }}
-          >
+          <Container maxWidth="full" sx={{ height: "100%" }}>
             <Outlet />
           </Container>
         </Box>

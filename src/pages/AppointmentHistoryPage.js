@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import { Button, Modal, TextField, Typography, Paper } from "@mui/material";
-// import Header from "../components/Header"
 import axios from "axios";
 
 const AppointmentHistoryPage = () => {
@@ -68,31 +67,19 @@ const AppointmentHistoryPage = () => {
   }));
 
   return (
-    // <div>
-    //   <Header />
-    //   <div className="bg-white mt-2 p-4">
-    //     <Typography variant="h5">Appointment Approvals</Typography>
-    //     <div className="mt-2">
-    //       <DataGrid
-    //         rows={rows}
-    //         columns={columns}
-    //         pageSize={5}
-    //         rowsPerPageOptions={[5, 10, 20]}
-    //         checkboxSelection
-    //       />
-    //     </div>
-    //   </div>
-    // </div>
-    <div className="bg-white mt-2 p-4">
-      <Typography variant="h5">Appointment History</Typography>
-      <div className="mt-2">
-        <DataGrid
-          rows={rows}
-          columns={columns}
-          pageSize={5}
-          rowsPerPageOptions={[5, 10, 20]}
-          checkboxSelection
-        />
+    <div>
+      {/* <div className='bg-white mt-2 p-4'> */}
+      <div className="border-2 border-red-600 flex flex-col gap-5 py-5 h-full">
+        <Typography variant="h5">Appointment Approvals</Typography>
+        <div className="mt-2">
+          <DataGrid
+            rows={rows}
+            columns={columns}
+            pageSize={5}
+            rowsPerPageOptions={[5, 10, 20]}
+            checkboxSelection
+          />
+        </div>
       </div>
     </div>
   );
